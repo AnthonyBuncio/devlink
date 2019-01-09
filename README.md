@@ -17,7 +17,7 @@
 
 ## Back-end
 
-* [ ] Install dependencies
+* [x] Install dependencies
     * express
     * mongoose
     * passport
@@ -26,4 +26,14 @@
     * body-parser
     * bcryptjs
     * validator
+* [x] Install dev-dependency
+    * nodemon
+* [x] Create server.js
+* [x] Connect to MongoDB
+* [ ] Set API routes
+    * [ ] api/users/
+    * [ ] api/profiles/
+    * [ ] api/posts/
+* [ ]
+* [ ]
 
