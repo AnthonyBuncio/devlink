@@ -4,24 +4,26 @@
 
 ## Objectives
 
-_[ ] 📝 Diagram the Full Stack
-_[ ] 🔎 Differentiate between Client and Server
-_[ ] ⌨️ Get user search input on the Client
-_[ ] ➡️ Send user input from the client with fetch to the server
-_[ ] 🔍 Retrieve data from a database on the Server
-_[ ] 🙈 Hide/Show elements on the client
-_[ ] ✨ Add elements to the page on the client
-_[ ] 🚀 Deploy the client with Heroku
-_[ ] 🚀 Deploy the database with mLab
-_[ ] 🚀 Deploy the server with Heroku
+*[ ] 📝 Diagram the Full Stack
+*[ ] 🔎 Differentiate between Client and Server
+*[ ] ⌨️ Get user search input on the Client
+*[ ] ➡️ Send user input from the client with fetch to the server
+*[ ] 🔍 Retrieve data from a database on the Server
+*[ ] 🙈 Hide/Show elements on the client
+*[ ] ✨ Add elements to the page on the client
+*[ ] 🚀 Deploy the client with Heroku
+*[ ] 🚀 Deploy the database with mLab
+*[ ] 🚀 Deploy the server with Heroku
 
 ## Back-end
 
-_[ ] Install dependencies
-_ express
-_ mongoose
-_ passport
-_ passport-jwt
-_ jsonwebtoken
-_ body-parser
-_ bcryptjs \* validator
+*[ ] Install dependencies
+    * express
+    * mongoose
+    * passport
+    * passport-jwt
+    * jsonwebtoken
+    * body-parser
+    * bcryptjs
+    * validator
+
