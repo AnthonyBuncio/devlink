@@ -26,7 +26,7 @@
     * body-parser
     * bcryptjs
     * validator
-* [x] Install dev-dependency
+* [x] Install dev-dependencies
     * nodemon
 * [x] Create server.js
 * [x] Connect to MongoDB
@@ -34,6 +34,6 @@
     * [ ] api/users/
     * [ ] api/profiles/
     * [ ] api/posts/
-* [ ]
+* [ ] Define schemas
 * [ ]
 
