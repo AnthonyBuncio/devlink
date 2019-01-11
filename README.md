@@ -2,19 +2,6 @@
 
 [Add Description]
 
-## Objectives
-
-* [ ] 📝 Diagram the Full Stack
-* [ ] 🔎 Differentiate between Client and Server
-* [ ] ⌨️ Get user search input on the Client
-* [ ] ➡️ Send user input from the client with fetch to the server
-* [ ] 🔍 Retrieve data from a database on the Server
-* [ ] 🙈 Hide/Show elements on the client
-* [ ] ✨ Add elements to the page on the client
-* [ ] 🚀 Deploy the client with Heroku
-* [ ] 🚀 Deploy the database with mLab
-* [ ] 🚀 Deploy the server with Heroku
-
 ## Back-end
 
 * [x] Install dependencies
@@ -31,14 +18,16 @@
     * nodemon
 * [x] Create server.js
 * [x] Connect to MongoDB
+* [ ] Define schemas
 * [ ] Set API routes
     * [ ] api/users/
-        * [ ] Register
-            * [ ] Import Gravatar
-            * [ ] Hash password with bcryptjs
+        * [x] Register
+            * [x] Import Gravatar
+            * [x] Encrypt password
         * [ ] Login
+            * [x] Decrypt password
+            * [ ] Return signed JWT token
     * [ ] api/profiles/
     * [ ] api/posts/
-* [ ] Define schemas
 * [ ] 
 
