@@ -1,11 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 const users = require('./routes/api/users');
 const profile = require('./routes/api/profile');
 const posts = require('./routes/api/posts');
 
 const app = express();
+
+// Body parser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // DB Config
 const db = require('./config/keys').mongoURI;
@@ -17,10 +22,17 @@ mongoose.connect(db, { useNewUrlParser: true })
 
 app.get('/', (req, res) => res.send('Hello!'));
 
-// Use routes
+// First parameter defines the url endpoint for each API
+// Second parameter is the routes and logic for each route
+
+// Handles registration and login
 app.use('/api/users', users);
+// 
 app.use('/api/profile', profile);
+// 
 app.use('/api/posts', posts);
+
+
 
 const port = process.env.PORT || 5000;
 

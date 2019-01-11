@@ -26,14 +26,19 @@
     * body-parser
     * bcryptjs
     * validator
+    * gravatar
 * [x] Install dev-dependencies
     * nodemon
 * [x] Create server.js
 * [x] Connect to MongoDB
 * [ ] Set API routes
     * [ ] api/users/
+        * [ ] Register
+            * [ ] Import Gravatar
+            * [ ] Hash password with bcryptjs
+        * [ ] Login
     * [ ] api/profiles/
     * [ ] api/posts/
 * [ ] Define schemas
-* [ ]
+* [ ] 
 
