@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const passport = require('passport');
 
 // Import routes and all requests
 const users = require('./routes/api/users');
@@ -22,7 +23,9 @@ mongoose.connect(db, { useNewUrlParser: true })
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err))
 
-app.get('/', (req, res) => res.send('Hello!'));
+app.use(passport.initialize());
+require('./config/passport.js')(passport);
+
 
 // First parameter defines the url endpoint for each API
 // Second parameter is the routes and logic for each route brought in from routes/api

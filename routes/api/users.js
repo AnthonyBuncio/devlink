@@ -4,6 +4,11 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const keys = require('../../config/keys')
+const passport = require('passport');
+
+// Import input validation
+const validateRegisterInput = require('../../validation/register');
+const validateLoginInput = require('../../validation/login')
 
 // Import User schema
 const User = require('../../models/User');
@@ -12,12 +17,18 @@ router.get('/test', (req, res) => res.json({msg: "Users work"}));
 
 // Register a new user
 router.post('/register', (req, res) => {
+    const { errors, isValid } = validateRegisterInput(req.body);
+    if(!isValid) {
+        return res.status(400).json(errors)
+    }
+
     // Check to see if there is a registered email
     User.findOne({ email: req.body.email })
         .then(user => {
             // If there is a user, return `Email exists`
             if(user) {
-                return res.status(400).json({email: 'Email already exists'})
+                errors.email = 'Email already exists'
+                return res.status(400).json(errors)
             } 
             // Else, register new user
             else {
@@ -51,6 +62,11 @@ router.post('/register', (req, res) => {
 
 // Login user and return JWT token
 router.post('/login', (req, res) => {
+    const { errors, isValid } = validateLoginInput(req.body);
+    if(!isValid) {
+        return res.status(400).json(errors)
+    }
+
     const email = req.body.email;
     const password = req.body.password;
     // Check to see if there is a registered email
@@ -58,7 +74,8 @@ router.post('/login', (req, res) => {
         .then(user => {
             // If email is not registered, return `User not found`
             if(!user) {
-                return res.status(404).json({email: 'User not found'})
+                errors.email = 'User not found'
+                return res.status(404).json(errors)
             }
             // Else, decrypt password
             bcrypt.compare(password, user.password)
@@ -80,10 +97,15 @@ router.post('/login', (req, res) => {
                     } 
                     // Else, return `Incorrect password`
                     else {
-                        return res.status(400).json({password: 'Incorrect password'});
+                        errors.password = 'Incorrect password'
+                        return res.status(400).json(errors);
                     }
                 });
         });
+});
+
+router.get('/current', passport.authenticate('jwt', {session: false}), (req,res) => {
+    res.json(req.user)
 });
 
 module.exports = router;

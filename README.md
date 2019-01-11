@@ -19,15 +19,29 @@
 * [x] Create server.js
 * [x] Connect to MongoDB
 * [ ] Define schemas
+    * [x] User
+    * [ ] Profile
+    * [ ] Post
 * [ ] Set API routes
-    * [ ] api/users/
-        * [x] Register
+    * [x] api/users/
+        * [x] Register user
             * [x] Import Gravatar
             * [x] Encrypt password
-        * [ ] Login
+        * [x] Login user
             * [x] Decrypt password
-            * [ ] Return signed JWT token
+            * [x] Return signed JWT token
     * [ ] api/profiles/
     * [ ] api/posts/
-* [ ] 
+* [ ] Input validation
+    * [x] Registration fields
+    * [x] Login fields
+    * [ ] Profile info fields
+    * [ ] Post fields
 
+## Front-end
+
+* [ ] Login
+* [ ] Register
+* [ ] Dashboard
+* [ ] Developers
+* [ ] Posts
