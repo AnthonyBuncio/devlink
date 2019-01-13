@@ -24,10 +24,10 @@
     * [ ] Post
 * [ ] Set API routes
     * [x] api/users/
-        * [x] Register user
+        * [x] Register user 
             * [x] Import Gravatar
             * [x] Encrypt password
-        * [x] Login user
+        * [x] Login user 
             * [x] Decrypt password
             * [x] Return signed JWT token
     * [ ] api/profiles/
@@ -37,6 +37,7 @@
     * [x] Login fields
     * [ ] Profile info fields
     * [ ] Post fields
+* [ ] 
 
 ## Front-end
 

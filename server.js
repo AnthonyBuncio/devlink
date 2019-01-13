@@ -11,7 +11,7 @@ const posts = require('./routes/api/posts');
 const app = express();
 
 // Body parser middleware [from express]
-// Use for POST requests and get data from body [req.body]
+// Use for POST requests to get data from body [req.body]
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
@@ -23,20 +23,17 @@ mongoose.connect(db, { useNewUrlParser: true })
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err))
 
+
+// Passport integration
 app.use(passport.initialize());
 require('./config/passport.js')(passport);
 
 
 // First parameter defines the url endpoint for each API
 // Second parameter is the routes and logic for each route brought in from routes/api
-
-// Handles registration and login
 app.use('/api/users', users);
-// 
 app.use('/api/profile', profile);
-// 
 app.use('/api/posts', posts);
-
 
 
 const port = process.env.PORT || 5000;
