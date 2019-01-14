@@ -46,3 +46,5 @@
 * [ ] Dashboard
 * [ ] Developers
 * [ ] Posts
+    * [ ] Comments
+    * [ ] Like
