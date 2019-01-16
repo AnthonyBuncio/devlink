@@ -33,6 +33,10 @@ module.exports = function validateRegisterInput(data) {
         errors.password = 'Password must be between 6-16 characters';
     }
 
+    if (!new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])').test(data.password)) {
+        errors.password = 'Password must contain at least one uppercase letter[A-Z], one lowercase letter[a-z], and one number[0-9]';
+    }
+
     if(Validator.isEmpty(data.password2)) {
         errors.password2 = 'Confirm password is required'
     }
