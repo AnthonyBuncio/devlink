@@ -1,3 +1,4 @@
+<!-- prettier-ignore-start -->
 # Devs Social Network
 
 [Add Description]
@@ -20,14 +21,14 @@
 * [x] Connect to MongoDB
 * [ ] Define schemas
     * [x] User
-    * [ ] Profile
+    * [x] Profile
     * [ ] Post
 * [ ] Set API routes
     * [x] api/users/
-        * [x] Register user 
+        * [x] [POST] Register user 
             * [x] Import Gravatar
             * [x] Encrypt password
-        * [x] Login user 
+        * [x] (POST) Login user 
             * [x] Decrypt password
             * [x] Return signed JWT token
     * [ ] api/profiles/
@@ -48,3 +49,7 @@
 * [ ] Posts
     * [ ] Comments
     * [ ] Like
+
+
+
+<!-- prettier-ignore-end -->
