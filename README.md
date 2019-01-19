@@ -25,13 +25,15 @@
     * [ ] Post
 * [ ] Set API routes
     * [x] api/users/
-        * [x] [POST] Register user 
+        * [x] Register user
             * [x] Import Gravatar
             * [x] Encrypt password
-        * [x] (POST) Login user 
+        * [x] Login user
             * [x] Decrypt password
             * [x] Return signed JWT token
     * [ ] api/profiles/
+        * [x] Fetch profile
+        * [x] Save new/edit profile
     * [ ] api/posts/
 * [ ] Input validation
     * [x] Registration fields
