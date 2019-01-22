@@ -32,13 +32,15 @@
             * [x] Decrypt password
             * [x] Return signed JWT token
     * [ ] api/profiles/
-        * [x] Fetch profile
+        * [x] Fetch user profile
+        * [ ] Fetch user profile by handle (personal URL)
+        * [ ] Fetch all profiles
         * [x] Save new/edit profile
     * [ ] api/posts/
 * [ ] Input validation
     * [x] Registration fields
     * [x] Login fields
-    * [ ] Profile info fields
+    * [x] Profile info fields
     * [ ] Post fields
 * [ ] 
 
