@@ -41,8 +41,7 @@
     * [x] Registration fields
     * [x] Login fields
     * [x] Profile info fields
-    * [ ] Post fields
-* [ ] 
+    * [ ] Post fields 
 
 ## Front-end
 
