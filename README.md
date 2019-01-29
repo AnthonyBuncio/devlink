@@ -19,10 +19,10 @@
     * nodemon
 * [x] Create server.js
 * [x] Connect to MongoDB
-* [ ] Define schemas
+* [x] Define schemas
     * [x] User
     * [x] Profile
-    * [ ] Post
+    * [x] Post
 * [ ] Set API routes
     * [x] api/users/
         * [x] Register user
@@ -43,13 +43,17 @@
         * [x] Add education
         * [x] Delete education
     * [ ] api/posts/
-        * [ ] 
-        * [ ] 
-* [ ] Input validation
+        * [x] Create post
+        * [x] Delete post
+        * [x] Get all posts
+        * [x] Get single post by id
+        * [ ] Like post
+        * [ ] Unlike post
+* [x] Input validation
     * [x] Registration fields
     * [x] Login fields
-    * [x] Profile info fields
-    * [ ] Post fields 
+    * [x] User profile fields
+    * [x] Post fields 
 
 ## Front-end
 
