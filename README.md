@@ -31,10 +31,11 @@
         * [x] Login user
             * [x] Decrypt password
             * [x] Return signed JWT token
-    * [ ] api/profiles/
-        * [x] Fetch user profile
-        * [ ] Fetch user profile by handle (personal URL)
-        * [ ] Fetch all profiles
+    * [x] api/profiles/
+        * [x] Fetch current user profile
+        * [x] Fetch user profile by username
+        * [x] Fetch user profile by id
+        * [x] Fetch all profiles
         * [x] Save new/edit profile
     * [ ] api/posts/
         * [ ] 
