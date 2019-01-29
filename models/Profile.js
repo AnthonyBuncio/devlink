@@ -51,7 +51,7 @@ const ProfileSchema = new Schema({
             },
             location: {
                 type: String,
-                required: true
+                required: false
             },
             from: {
                 type: Date,
@@ -67,7 +67,7 @@ const ProfileSchema = new Schema({
             },
             description: {
                 type: String,
-                default: false
+                required: false
             }
         }
     ],
@@ -99,7 +99,7 @@ const ProfileSchema = new Schema({
             },
             description: {
                 type: String,
-                default: false
+                required: false
             }
         }
     ],

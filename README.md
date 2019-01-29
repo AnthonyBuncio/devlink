@@ -37,6 +37,11 @@
         * [x] Fetch user profile by id
         * [x] Fetch all profiles
         * [x] Save new/edit profile
+    * [x] api/profiles/
+        * [x] Add work experience
+        * [x] Delete work experience
+        * [x] Add education
+        * [x] Delete education
     * [ ] api/posts/
         * [ ] 
         * [ ] 
