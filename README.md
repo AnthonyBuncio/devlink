@@ -42,18 +42,22 @@
         * [x] Delete work experience
         * [x] Add education
         * [x] Delete education
-    * [ ] api/posts/
+    * [x] api/posts/
         * [x] Create post
         * [x] Delete post
         * [x] Get all posts
         * [x] Get single post by id
-        * [ ] Like post
-        * [ ] Unlike post
+    * [ ] api/posts/
+        * [x] Like post
+        * [x] Unlike post
+        * [ ] Add comment
+        * [ ] Remove comment
 * [x] Input validation
     * [x] Registration fields
     * [x] Login fields
     * [x] User profile fields
-    * [x] Post fields 
+    * [x] Post fields
+    * [x] Comment fields  
 
 ## Front-end
 
