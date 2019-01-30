@@ -37,7 +37,7 @@
         * [x] Fetch user profile by id
         * [x] Fetch all profiles
         * [x] Save new/edit profile
-    * [x] api/profiles/
+    * [x] api/profiles/ [more tings..]
         * [x] Add work experience
         * [x] Delete work experience
         * [x] Add education
@@ -47,11 +47,11 @@
         * [x] Delete post
         * [x] Get all posts
         * [x] Get single post by id
-    * [ ] api/posts/
+    * [x] api/posts/ [more tings..]
         * [x] Like post
         * [x] Unlike post
-        * [ ] Add comment
-        * [ ] Remove comment
+        * [x] Add comment
+        * [x] Remove comment
 * [x] Input validation
     * [x] Registration fields
     * [x] Login fields
