@@ -1,5 +1,5 @@
 <!-- prettier-ignore-start -->
-# Devs Social Network
+# DevLink - Social Network for Developers
 
 [Add Description]
 
@@ -68,12 +68,18 @@
     * [x] redux
     * [x] react-redux
     * [x] redux-thunk
+* [x] App.js
+    * [x] Redux provider & store
+    * [x] Check token & maintain user session throughout
 * [x] Routes
 * [x] Landing
-* [x] Login
-    * [x] Display errors
-* [x] Register
-    * [x] Display errors
+    * [x] Login
+        * [x] Display any errors
+        * [x] Save user token in browser
+        * [x] Decode token
+        * [x] Set state to user information
+    * [x] Register
+        * [x] Display any errors
 * [ ] Dashboard
 * [ ] Developers
 * [ ] Posts
