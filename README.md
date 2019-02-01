@@ -63,8 +63,8 @@
 
 * [x] Routes
 * [x] Landing
-* [ ] Login
-* [ ] Register
+* [x] Login
+* [x] Register
 * [ ] Dashboard
 * [ ] Developers
 * [ ] Posts
