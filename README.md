@@ -61,6 +61,8 @@
 
 ## Front-end
 
+* [x] Routes
+* [x] Landing
 * [ ] Login
 * [ ] Register
 * [ ] Dashboard
