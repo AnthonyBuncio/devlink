@@ -23,7 +23,7 @@
     * [x] User
     * [x] Profile
     * [x] Post
-* [ ] Set API routes
+* [x] Set API routes
     * [x] api/users/
         * [x] Register user
             * [x] Import Gravatar
@@ -61,10 +61,16 @@
 
 ## Front-end
 
+* [x] Install dependencies
+    * [x] react-router-dom
+    * [x] axios
+    * [x] classnames
 * [x] Routes
 * [x] Landing
 * [x] Login
+    * [x] Display errors
 * [x] Register
+    * [x] Display errors
 * [ ] Dashboard
 * [ ] Developers
 * [ ] Posts
