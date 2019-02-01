@@ -65,6 +65,9 @@
     * [x] react-router-dom
     * [x] axios
     * [x] classnames
+    * [x] redux
+    * [x] react-redux
+    * [x] redux-thunk
 * [x] Routes
 * [x] Landing
 * [x] Login
