@@ -21,9 +21,12 @@ class Dashboard extends Component {
       dashboardContent = <Spinner />
     } else {
       // Check if user has created profile
+      // Checking profile object for any keys
       if(Object.keys(profile).length > 0) {
+        // User has profile
         dashboardContent = <h4>Display Profile</h4>
       } else {
+        // User DOES NOT have profile
         dashboardContent = (
           <div>
             <p className="lead text-muted">Welcome {user.name}</p>
