@@ -9,11 +9,11 @@ module.exports = function validateProfileInput(data) {
     data.skills = !isEmpty(data.skills) ? data.skills : '';
 
     if (!Validator.isLength(data.handle, {min: 2, max: 20})) {
-        errors.handle = 'Handle must be between 2-20 characters';
+        errors.handle = 'Username must be between 2-20 characters';
     }
 
     if (Validator.isEmpty(data.handle)) {
-        errors.handle = 'Profile handle is required';
+        errors.handle = 'Username is required';
     }
 
     if (Validator.isEmpty(data.status)) {

@@ -71,7 +71,7 @@
 * [x] App.js
     * [x] Redux provider & store
     * [x] Check token & maintain user session throughout
-* [x] Routes
+* [x] Routes/Protected routes
 * [x] Landing
     * [x] Login
         * [x] Display any errors
@@ -81,6 +81,9 @@
     * [x] Register
         * [x] Display any errors
 * [ ] Dashboard
+    * [ ] Profile
+    * [x] No profile
+* [ ] Create/Edit profile
 * [ ] Developers
 * [ ] Posts
     * [ ] Comments
