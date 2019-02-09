@@ -83,7 +83,7 @@
 * [ ] Dashboard
     * [ ] Profile
     * [x] No profile
-* [ ] Create/Edit profile
+* [x] Create/Edit profile
 * [ ] Developers
 * [ ] Posts
     * [ ] Comments
