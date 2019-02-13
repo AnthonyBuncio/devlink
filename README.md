@@ -3,6 +3,11 @@
 
 [Add Description]
 
+### What I've Learned..
+
+* React state is separate from redux state
+    * e.g In `Edit Profile` component, the fields are stored in React component state. Your current user profile is stored in Redux. To fill the empty fields upon component initiation, the profile has to be pulled from the Redux state, stored in a profile object, and `setState` with the profile object. The empty profile fields will then be updated with any current profile information.
+
 ## Back-end
 
 * [x] Install dependencies
@@ -87,8 +92,7 @@
 * [ ] Developers
 * [ ] Posts
     * [ ] Comments
-    * [ ] Like
-    
+    * [ ] Like    
 
 
 
