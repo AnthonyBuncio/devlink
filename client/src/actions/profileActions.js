@@ -32,7 +32,23 @@ export const getProfiles = () => dispatch => {
         type: GET_PROFILES,
         payload: null
       }))
-}
+};
+
+// Get profile by handle
+export const getProfileByHandle = handle => dispatch => {
+  dispatch(setProfileLoading())
+  axios.get(`/api/profile/handle/${handle}`)
+    .then(res => 
+      dispatch({
+        type: GET_PROFILE,
+        payload: res.data
+      }))
+    .catch(err => 
+      dispatch({
+        type: GET_PROFILE,
+        payload: null
+      }))
+};
 
 // Create profile
 export const createProfile = (profileData, history) => dispatch => {
@@ -43,7 +59,7 @@ export const createProfile = (profileData, history) => dispatch => {
         type: GET_ERRORS,
         payload: err.response.data
       }))
-}
+};
 
 // Add experience
 export const addExperience = (expData, history) => dispatch => {
@@ -54,7 +70,7 @@ export const addExperience = (expData, history) => dispatch => {
         type: GET_ERRORS,
         payload: err.response.data
       }))
-}
+};
 
 // Add education
 export const addEducation = (eduData, history) => dispatch => {
@@ -65,7 +81,7 @@ export const addEducation = (eduData, history) => dispatch => {
         type: GET_ERRORS,
         payload: err.response.data
       }))
-}
+};
 
 // Delete experience
 export const deleteExperience = id => dispatch => {
@@ -80,7 +96,7 @@ export const deleteExperience = id => dispatch => {
         type: GET_ERRORS,
         payload: err.response.data
       }))
-}
+};
 
 // Delete education
 export const deleteEducation = id => dispatch => {
@@ -95,7 +111,7 @@ export const deleteEducation = id => dispatch => {
         type: GET_ERRORS,
         payload: err.response.data
       }))
-}
+};
 
 // Delete account & profile
 export const deleteAccount = () => dispatch => {
@@ -112,7 +128,7 @@ export const deleteAccount = () => dispatch => {
           payload: err.response.data
         }))
   }
-}
+};
 
 // Profile loading
 export const setProfileLoading = () => {
